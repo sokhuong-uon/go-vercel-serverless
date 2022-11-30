@@ -10,5 +10,5 @@ func randomHandler(w http.ResponseWriter, r *http.Request) {
 
   number := rand.ExpFloat64()
 
-  fmt.Fprintf(w, "<h1>Random number: %v</h1>",number)
+  fmt.Fprintf(w, "<h1>Random number: %v</h1>", number)
 }
