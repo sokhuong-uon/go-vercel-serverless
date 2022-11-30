@@ -1,4 +1,4 @@
-package handler
+package api
 
 import (
   "fmt"
@@ -6,7 +6,7 @@ import (
   "math/rand"
 )
 
-func randomHandler(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 
   number := rand.ExpFloat64()
 
