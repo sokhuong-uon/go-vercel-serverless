@@ -6,7 +6,7 @@ import (
   "math/rand"
 )
 
-func Handler(w http.ResponseWriter, r *http.Request) {
+func RandomHandler(w http.ResponseWriter, r *http.Request) {
 
   number := rand.ExpFloat64()
 
