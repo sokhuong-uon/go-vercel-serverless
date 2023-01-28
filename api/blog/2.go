@@ -10,8 +10,8 @@ import (
 func Blog2Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
-		title: "2 haha",
-		body:  "2 wow",
+		Title: "Second Blog",
+		Body:  "A good blog post",
 	}
 
 	fmt.Fprintf(w, "%v", blog)

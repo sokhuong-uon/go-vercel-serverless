@@ -6,8 +6,8 @@ import (
 )
 
 type Blog struct {
-	title string
-	body  string
+	Title string `Json:"title"`
+	Body  string `Json:"body"`
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
