@@ -14,5 +14,7 @@ func Blog1Handler(w http.ResponseWriter, r *http.Request) {
 		Body:  "Wow! this is amazing",
 	}
 
+	w.Header().Set("Content-Type", "application/json")
+
 	fmt.Fprintf(w, "%v", blog)
 }
