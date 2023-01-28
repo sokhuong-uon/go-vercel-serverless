@@ -9,9 +9,9 @@ import (
 
 func BlogHandler(w http.ResponseWriter, r *http.Request) {
 	blogs := []api.Blog{
-		{Title: "Blog 1", Body: "Body"},
-		{Title: "Blog 2", Body: "Body"},
-		{Title: "Blog 3", Body: "Body"},
+		{"title": "Blog 1", "body": "Body"},
+		{"title": "Blog 2", "body": "Body"},
+		{"title": "Blog 3", "body": "Body"},
 	}
 	w.Header().Set("Content-Type", "application/json")
 

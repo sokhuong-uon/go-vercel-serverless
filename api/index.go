@@ -5,11 +5,8 @@ import (
 	"net/http"
 )
 
-type Blog struct {
-	Title string `Json:"title"`
-	Body  string `Json:"body"`
-}
+type Blog map[string]string
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hey! Let's chat")
+	fmt.Fprintf(w, "Let's chat")
 }

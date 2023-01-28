@@ -10,8 +10,8 @@ import (
 func Blog2Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
-		Title: "Second Blog",
-		Body:  "A good blog post",
+		"title": "Second Blog",
+		"body":  "ok",
 	}
 
 	w.Header().Set("Content-Type", "application/json")
