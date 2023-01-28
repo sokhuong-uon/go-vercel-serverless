@@ -1,6 +1,7 @@
 package api
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 
@@ -13,8 +14,9 @@ func Blog1Handler(w http.ResponseWriter, r *http.Request) {
 		"title": "First Blog",
 		"body":  "Wow! this is amazing",
 	}
+	data, _ := json.Marshal(blog)
 
 	w.Header().Set("Content-Type", "application/json")
 
-	fmt.Fprintf(w, "%v", blog)
+	fmt.Fprintf(w, "%v", data)
 }
