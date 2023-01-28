@@ -8,7 +8,7 @@ import (
 
 func RandomHandler(w http.ResponseWriter, r *http.Request) {
 
-  number := rand.ExpFloat64()
+	number := rand.ExpFloat64()
 
-  fmt.Fprintf(w, "%v", number)
+	fmt.Fprintf(w, "%v", number)
 }
