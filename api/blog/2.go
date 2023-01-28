@@ -11,10 +11,11 @@ import (
 func Blog2Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
-		"title": "Second Blog",
-		"body":  "ok",
+		Title: "Second Blog",
+		Body:  "ok",
 	}
-	data, _ := json.Marshal(blog)
+	j, _ := json.Marshal(blog)
+	data := string(j)
 
 	w.Header().Set("Content-Type", "application/json")
 

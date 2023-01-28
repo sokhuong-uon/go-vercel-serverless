@@ -10,11 +10,12 @@ import (
 
 func BlogHandler(w http.ResponseWriter, r *http.Request) {
 	blogs := []api.Blog{
-		{"title": "Blog 1", "body": "Body"},
-		{"title": "Blog 2", "body": "Body"},
-		{"title": "Blog 3", "body": "Body"},
+		{Title: "Blog 1", Body: "Body"},
+		{Title: "Blog 2", Body: "Body"},
+		{Title: "Blog 3", Body: "Body"},
 	}
-	data, _ := json.Marshal(blogs)
+	j, _ := json.Marshal(blogs)
+	data := string(j)
 	w.Header().Set("Content-Type", "application/json")
 
 	fmt.Fprintf(w, "%v", data)
