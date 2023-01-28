@@ -11,6 +11,7 @@ import (
 func BlogHandler(w http.ResponseWriter, r *http.Request) {
 	blogs := []api.Blog{
 		{
+			Id:    1,
 			Title: "Exploring the Capabilities of ChatGPT: The State-of-the-Art Language Model",
 			Body: `ChatGPT is a state-of-the-art language model developed by OpenAI. It is based on the transformer architecture, which has proven to be highly effective in natural language processing tasks such as language translation and text summarization.
 One of the key advantages of ChatGPT is its ability to generate human-like text. This is due to its large training dataset, which includes a wide range of text from books, articles, and websites. As a result, ChatGPT is able to generate text that is not only grammatically correct, but also coherent and contextually appropriate.
@@ -19,6 +20,7 @@ In addition to its natural language generation capabilities, ChatGPT also has th
 Overall, ChatGPT is a powerful language model that has the potential to revolutionize the way we interact with machines and automate a wide range of tasks that require natural language understanding and generation. It will also bring new opportunities to the field of Artificial Intelligence and will be a game changer in industries such as customer service, content creation and language translation.
 		`},
 		{
+			Id:    2,
 			Title: "Understanding the Impact of Artificial Intelligence (AI) on Our Lives",
 			Body: `Artificial Intelligence, or AI, is a rapidly growing field that is changing the way we live and work. At its core, AI is the simulation of human intelligence in machines that are programmed to think and learn like humans.
 One of the key advancements in AI is machine learning, which allows machines to learn from data without being explicitly programmed. This has led to the development of powerful algorithms that can recognize patterns in data, make predictions, and even take actions based on that data.
@@ -29,6 +31,7 @@ While AI has the potential to bring many benefits, it also raises important ethi
 Overall, AI is a rapidly developing field that has the potential to change the way we live and work. It will bring new opportunities and challenges, and it will be important for society to understand and embrace the implications of these technologies.
 		`},
 		{
+			Id:    3,
 			Title: "Discovering the Rich Culture and History of Cambodia",
 			Body: `Cambodia is a Southeast Asian country known for its rich culture and history. The country is home to the famous Angkor Wat, a UNESCO World Heritage Site and one of the most important archaeological sites in Southeast Asia. The temple complex, built in the 12th century, is a testament to the Khmer Empire's power and architectural achievements.
 Cambodia is also known for its vibrant culture and traditional arts. The country has a rich tradition of dance and music, which is showcased in the many festivals and performances held throughout the year. Cambodian traditional dance is characterized by its fluid movements and intricate hand gestures.

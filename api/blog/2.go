@@ -11,6 +11,7 @@ import (
 func Blog2Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
+		Id:    2,
 		Title: "Understanding the Impact of Artificial Intelligence (AI) on Our Lives",
 		Body: `Artificial Intelligence, or AI, is a rapidly growing field that is changing the way we live and work. At its core, AI is the simulation of human intelligence in machines that are programmed to think and learn like humans.
 One of the key advancements in AI is machine learning, which allows machines to learn from data without being explicitly programmed. This has led to the development of powerful algorithms that can recognize patterns in data, make predictions, and even take actions based on that data.

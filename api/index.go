@@ -6,6 +6,7 @@ import (
 )
 
 type Blog struct {
+	Id    int    `Json:"id"`
 	Title string `Json:"title"`
 	Body  string `Json:"body"`
 }

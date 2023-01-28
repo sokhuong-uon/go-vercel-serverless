@@ -11,6 +11,7 @@ import (
 func Blog1Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
+		Id:    1,
 		Title: "Exploring the Capabilities of ChatGPT: The State-of-the-Art Language Model",
 		Body: `ChatGPT is a state-of-the-art language model developed by OpenAI. It is based on the transformer architecture, which has proven to be highly effective in natural language processing tasks such as language translation and text summarization.
 One of the key advantages of ChatGPT is its ability to generate human-like text. This is due to its large training dataset, which includes a wide range of text from books, articles, and websites. As a result, ChatGPT is able to generate text that is not only grammatically correct, but also coherent and contextually appropriate.

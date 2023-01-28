@@ -11,6 +11,7 @@ import (
 func Blog3Handler(w http.ResponseWriter, r *http.Request) {
 
 	blog := api.Blog{
+		Id:    3,
 		Title: "Discovering the Rich Culture and History of Cambodia",
 		Body: `Cambodia is a Southeast Asian country known for its rich culture and history. The country is home to the famous Angkor Wat, a UNESCO World Heritage Site and one of the most important archaeological sites in Southeast Asia. The temple complex, built in the 12th century, is a testament to the Khmer Empire's power and architectural achievements.
 Cambodia is also known for its vibrant culture and traditional arts. The country has a rich tradition of dance and music, which is showcased in the many festivals and performances held throughout the year. Cambodian traditional dance is characterized by its fluid movements and intricate hand gestures.
